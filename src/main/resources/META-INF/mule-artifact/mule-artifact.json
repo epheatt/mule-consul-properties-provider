@@ -1,0 +1,26 @@
+{
+  "minMuleVersion": "4.2.0",
+  "requiredProduct": "MULE",
+  "extensionModelLoaderDescriptor": {
+    "id": "crafted",
+    "attributes": {
+      "type": "com.mulesoft.hashicorp.consul.provider.api.ConsulConfigurationPropertiesExtensionLoadingDelegate"
+    }
+  },
+  "name": "consul-properties-provider",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "exportedPackages": [
+        "com.mulesoft.hashicorp.consul.provider.api"
+      ],
+      "exportedResources": [
+        "META-INF/services/org.mule.runtime.config.api.dsl.model.properties.ConfigurationPropertiesProviderFactory"
+      ]
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}
